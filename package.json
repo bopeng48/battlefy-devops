@@ -1,0 +1,20 @@
+{
+  "name": "battlefy-devops",
+  "version": "0.1.0",
+  "bin": {
+    "battlefy-devops": "bin/battlefy-devops.js"
+  },
+  "scripts": {
+    "build": "echo \"The build step is not required when using JavaScript!\" && exit 0",
+    "cdk": "cdk",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "aws-cdk": "2.66.0",
+    "jest": "^29.4.2"
+  },
+  "dependencies": {
+    "aws-cdk-lib": "2.66.0",
+    "constructs": "^10.0.0"
+  }
+}
