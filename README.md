@@ -8,4 +8,4 @@
 
 
 # Project components: 
-![diagram](./basic component.png)
+![diagram](basic-component.png)
