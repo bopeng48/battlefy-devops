@@ -20,18 +20,11 @@ jobs:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-west-2
-      - name: npm install
-        env:
-          CI: true
+      - name: Install AWS CLI
         run: |
-          pwd
-          npm ci --only=prod
-      - name: npm install cdk modules
-        env:
-          CI: true
-        run: |
-          pwd
-          npm ci
+          sudo apt-get update
+          sudo apt-get install -y python3-pip
+          sudo pip3 install awscli
       - name: cdk synth
         id: synth
         run: npx cdk synth
