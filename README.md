@@ -1,4 +1,9 @@
 # Welcome to URL shortener project
+
+## Usage 
+This applicaiton has been deployed to aws, supports POST and GET method, example usage:
+* POST https://t21m9dg72a.execute-api.us-west-2.amazonaws.com/default/BattlefyDevopsStack-urlshortener587D6FC3-pDmDX8x2adGk  {"longUrl": "www.battlefy.com"} in the body
+* GET https://t21m9dg72a.execute-api.us-west-2.amazonaws.com/default/BattlefyDevopsStack-urlshortener587D6FC3-pDmDX8x2adGk?url=509f6134    put the previously returned key after the url= , here "509f6134" is the hash I got from shortening www.battlefy.com
 ## Useful commands
 
 * `npm run test`         perform the jest unit tests
